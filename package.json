@@ -1,34 +1,36 @@
 {
   "name": "@devasatyam/react-bootstrap-4-controls",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "My limited version of React Bootstrap using Bootstrap 4",
   "main": "lib/index.js",
+  "module": "lib/index.es.js",
+  "files": ["lib"],
+  "bugs": {
+    "url": "https://github.com/Satyam/react-bootstrap-4-controls/issues"
+  },
+  "repository": "github:/Satyam/react-bootstrap-4-controls/issues",
   "scripts": {
     "test": "jest",
-    "build": "run-s build:clean build:compile build:copyCss",
-    "build:clean": "rimraf lib",
-    "build:compile": "babel src -d lib -s --ignore _*",
-    "build:copyCss": "cpy '**/*.css' '../lib/' --cwd=src --parents",
+    "build": "run-s build:clean build:compile",
+    "build:clean": "rimraf lib dist",
+    "build:compile": "rollup -c",
     "lint": "eslint --ext .jsx,.js . || exit 0",
     "parcel": "parcel index.html --open",
     "watch": "nodemon --watch src/ --exec npm run rebuild",
-    "rebuild": "run-s build:compile build:copyCss"
+    "prepare": "run-s lint build"
   },
-  "keywords": [
-    "react",
-    "bootstrap",
-    "bootstrap@4"
-  ],
+  "keywords": ["react", "bootstrap", "bootstrap@4"],
   "author": "Daniel Barreiro",
   "license": "MIT",
-  "dependencies": {
-    "classnames": "^2.2.5",
+  "peerDependencies": {
     "final-form": "^4.2.1",
-    "parcel-bundler": "^1.6.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-final-form": "^3.1.2",
     "react-router-dom": "^4.2.2"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -47,8 +49,15 @@
     "jest-enzyme": "^5.0.3",
     "nodemon": "^1.17.1",
     "npm-run-all": "^4.1.2",
+    "parcel-bundler": "^1.6.2",
     "prop-types": "^15.6.1",
     "react-icons": "^2.2.7",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "rollup": "^0.56.5",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^9.0.0",
+    "rollup-plugin-node-resolve": "^3.2.0",
+    "rollup-plugin-postcss": "^1.3.3",
+    "rollup-plugin-uglify": "^3.0.0"
   }
 }
