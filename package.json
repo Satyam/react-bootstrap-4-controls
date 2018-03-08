@@ -1,10 +1,12 @@
 {
   "name": "@devasatyam/react-bootstrap-4-controls",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "My limited version of React Bootstrap using Bootstrap 4",
   "main": "lib/index.js",
   "module": "lib/index.es.js",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "bugs": {
     "url": "https://github.com/Satyam/react-bootstrap-4-controls/issues"
   },
@@ -19,7 +21,11 @@
     "watch": "nodemon --watch src/ --exec npm run rebuild",
     "prepare": "run-s lint build"
   },
-  "keywords": ["react", "bootstrap", "bootstrap@4"],
+  "keywords": [
+    "react",
+    "bootstrap",
+    "bootstrap@4"
+  ],
   "author": "Daniel Barreiro",
   "license": "MIT",
   "peerDependencies": {
