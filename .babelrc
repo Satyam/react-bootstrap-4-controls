@@ -1,0 +1,21 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": "last 2 versions"
+        },
+        "modules": false
+      }
+    ],
+    "react",
+    "stage-1"
+  ],
+  "env": {
+    "test": {
+      "presets": [["env"], "react", "stage-1"]
+    }
+  },
+  "plugins": ["transform-class-properties"]
+}
