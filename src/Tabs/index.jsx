@@ -4,4 +4,3 @@ import Tab from './Tab';
 Tabs.Tab = Tab;
 
 export default Tabs;
-export { Tabs, Tab };

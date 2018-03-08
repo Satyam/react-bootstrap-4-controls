@@ -7,22 +7,16 @@ Any of the following will work:
 ```
 import {
   Modal,
-  Header,
-  Body,
-  Footer,
   Alert,
   Confirm,
   Prompt,
   withAlert,
   withConfirm,
   withPrompt,
-} from '@devasatyam/controls/lib/Modal';
-
-import Modal from '@devasatyam/controls/lib/Modal';
-import { Modal } from '@devasatyam/controls';
+} from '@devasatyam/react-bootstrap-4-controls';
 ```
 
-The first will provide the various components by its individual names, the last two will provide `Modal` and `Modal.Header`, `Modal.Body`, `Modal.Footer`, `Modal.Alert`, `Modal.Confirm` and `Modal.Prompt` plus the High-order Components `Modal.withAlert`, `Modal.withConfirm` and `Modal.withPrompt`.
+All the components are also available as properties within `Modal` thus, for example, you can use either `withAlert` or `Modal.withAlert`.
 
 ## Usage
 
@@ -38,13 +32,13 @@ The first will provide the various components by its individual names, the last 
   </Modal.Footer>
 </Modal>
 
-<Modal.Alert open title="Heading" buttonLabel="Accept">
+<Alert open title="Heading" buttonLabel="Accept">
   This is the body of the alert
-</Modal.Alert>
+</Alert>
 
-<Modal.Confirm open title="Are you sure?" yesLabel="Yes" noLabel="No">
+<Confirm open title="Are you sure?" yesLabel="Yes" noLabel="No">
   Are you really, totally, absolutely sure?
-</Modal.Confirm>
+</Confirm>
 ```
 
 The most practical way to use these components is via their [HoC](#hoc) versions, which will be explained later
@@ -53,7 +47,7 @@ The most practical way to use these components is via their [HoC](#hoc) versions
 
 Renders the frame for the modal dialog and the mask that prevents the user from accessing the contents underneath, simulating a true modal box, though not blocking the execution of the code.
 
-It contains up to three sections [`Header`](#modalheader), [`Body`](#modalbody) and [`Footer`](#modalfooter) which are defined separately.
+It contains up to three sections [`Modal.Header`](#modalheader), [`Modal.Body`](#modalbody) and [`Modal.Footer`](#modalfooter) which are defined separately.
 
 Its attributes are:
 
@@ -119,7 +113,7 @@ Whatever is meant to be rendered within this area.
 
 Class names to be merged with those built in.
 
-## `Modal.Alert`
+## `Alert`
 
 A helper to provide an simple and consistent way to show an equivalent of a `window.alert()` modal box.
 
@@ -145,7 +139,7 @@ If present, the box will be shown.
 
 A function that will be called when the alert is dismissed. No arguments are provided to this function.
 
-## `Modal.Confirm`
+## `Confirm`
 
 A helper to provide an simple and consistent way to show an equivalent of a `window.confirm()` modal box.
 
@@ -179,7 +173,7 @@ If present, the box will be shown.
 
 A function that will be called when an option is chosen. Its single argument will be `true` or `false` for each of the buttons, or `null` (which is falsy anyway) if the confirm box was simply dismissed by clicking outside of the box or the close icon at the top right.
 
-## `Modal.Prompt`
+## `Prompt`
 
 A helper to provide an simple and consistent way to show an equivalent of a `window.prompt()` modal box.
 
@@ -221,7 +215,7 @@ The initial value to be offere to the user. If not provided, the input box will 
 
 Used for the `placeholder` property of the input box.
 
-## `Modal.withAlert`, `Modal.withConfirm` and `Modal.withPrompt` HoCs.
+## `withAlert`, `withConfirm` and `withPrompt` HoCs.
 
 It would be great to use the `Alert`, `Confirm` and `Prompt` helpers in a way that mostly resembles the `window.alert`, `window.confirm` and `window.prompt` methods of the browser.
 
@@ -256,7 +250,7 @@ Example.propTypes = {
   showConfirm: PropTypes.func,
 };
 
-export default Modal.withPrompt(Example);
+export default withPrompt(Example);
 ```
 
 The component to show the modal box should be wrapped with the HoC version of the modal required. All of them can be used in the same component by composing them using any of the `compose` methods available in modules such as Recompose or Redux, that is why each of them have their `showXxxx` named differently.

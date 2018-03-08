@@ -5,8 +5,7 @@
 Any of the following will work:
 
 ```
-import { Grid, Row, Col } from '@devasatyam/controls/lib/Grid';
-import { Grid, Row, Col } from '@devasatyam/controls';
+import { Grid, Row, Col } from '@devasatyam/react-bootstrap-4-controls';
 ```
 
 ## Usage

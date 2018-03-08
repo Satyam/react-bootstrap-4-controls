@@ -20,15 +20,4 @@ Modal.Prompt = Prompt;
 Modal.withPrompt = withPrompt;
 
 export default Modal;
-export {
-  Modal,
-  Header,
-  Body,
-  Footer,
-  Alert,
-  withAlert,
-  Confirm,
-  withConfirm,
-  Prompt,
-  withPrompt,
-};
+export { Modal, Alert, withAlert, Confirm, withConfirm, Prompt, withPrompt };

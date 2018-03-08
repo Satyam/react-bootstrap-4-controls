@@ -5,8 +5,7 @@
 Any of the following will work:
 
 ```
-import Jumbotron from '@devasatyam/controls/lib/Jumbotron';
-import { Jumbotron } from '@devasatyam/controls';
+import { Jumbotron } from '@devasatyam/react-bootstrap-4-controls';
 ```
 
 ## Usage

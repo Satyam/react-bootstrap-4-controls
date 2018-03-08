@@ -2,11 +2,8 @@
 
 ## Loading
 
-Any of the following will work:
-
 ```
-import { Button, ButtonGroup } from '@devasatyam/controls/lib/Button';
-import { Button, ButtonGroup } from '@devasatyam/controls';
+import { Button, ButtonGroup } from '@devasatyam/react-bootstrap-4-controls';
 ```
 
 ## Usage

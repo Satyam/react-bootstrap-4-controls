@@ -2,15 +2,9 @@
 
 ## Loading
 
-Any of the following will work:
-
 ```
-import { NavBar, Group, Button, Menu, Item, Search, Divider } from '@devasatyam/controls/lib/NavBar';
-import NavBar from '@devasatyam/controls/lib/NavBar';
-import { NavBar } from '@devasatyam/controls';
+import { NavBar } from '@devasatyam/react-bootstrap-4-controls';
 ```
-
-The first will provide separate `NavBar`, `Group`, `Button`, `Menu`, `Item`, `Search` and `Divider` components, the last two will provide `NavBar` and `NavBar.Group`, `NavBar.Button`, `NavBar.Menu`, `NavBar.Item`, `NavBar.Search` and `NavBar.Divider`.
 
 ## Usage
 

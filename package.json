@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/Satyam/react-bootstrap-4-controls/issues"
   },
-  "repository": "github:/Satyam/react-bootstrap-4-controls/issues",
+  "repository": "github:Satyam/react-bootstrap-4-controls",
   "scripts": {
     "test": "jest",
     "build": "run-s build:clean build:compile",

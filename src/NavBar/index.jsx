@@ -14,4 +14,3 @@ NavBar.Divider = Divider;
 NavBar.Search = Search;
 
 export default NavBar;
-export { NavBar, Group, Button, Menu, Item, Divider, Search };

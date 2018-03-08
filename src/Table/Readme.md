@@ -5,8 +5,7 @@
 Any of the following will work:
 
 ```
-import Table from '@devasatyam/controls/lib/Table';
-import { Table } from '@devasatyam/controls';
+import { Table } from '@devasatyam/react-bootstrap-4-controls';
 ```
 
 ## Usage

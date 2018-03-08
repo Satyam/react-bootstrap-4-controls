@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Modal, Header, Body, Footer } from './';
-import { Button } from '../';
-
+import Modal from './Modal';
+import Header from './Header';
+import Body from './Body';
+import Footer from './Footer';
+import Button from '../Button/Button';
 const Confirm = ({
   title,
   children,
