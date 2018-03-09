@@ -1,6 +1,6 @@
 {
   "name": "@devasatyam/react-bootstrap-4-controls",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "My limited version of React Bootstrap using Bootstrap 4",
   "main": "lib/index.js",
   "module": "lib/index.es.js",
