@@ -25,7 +25,6 @@ export default {
   external: [...Object.keys(pkg.peerDependencies || {})],
   plugins: [
     postcss({
-      modules: true,
       extensions: ['.css'],
       minimize: true,
     }),

@@ -5,7 +5,7 @@ import './styles.css';
 
 const FormButtons = ({ children, className, ...props }) => {
   return (
-    <div className={classNames('form-buttons', className)} {...props}>
+    <div className={classNames('rb4c-form-buttons', className)} {...props}>
       {children}
     </div>
   );

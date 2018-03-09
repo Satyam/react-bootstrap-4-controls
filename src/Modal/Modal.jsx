@@ -21,7 +21,7 @@ const Modal = ({ children, open, onClose, centered, size }) => {
   };
   return (
     <div
-      className={classNames('modal close-button', { open })}
+      className={classNames('modal close-button', { 'rb4c-modal-open': open })}
       tabIndex="-1"
       role="dialog"
       onClick={handleClick}

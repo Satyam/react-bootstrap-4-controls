@@ -1,4 +1,4 @@
-th.sortable span {
+th.rb4c-datatable-sortable span {
   width: 16px;
   display: inline-block;
   margin-right: 3px;
@@ -6,10 +6,10 @@ th.sortable span {
   opacity: 0.3;
 }
 
-th.sortable {
+th.rb4c-datatable-sortable {
   cursor: ns-resize;
 }
 
-th.sorted span {
+th.rb4c-datatable-sorted span {
   opacity: 1 !important;
 }

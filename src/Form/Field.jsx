@@ -16,7 +16,6 @@ import Button from '../Button/Button';
 
 import RenderField from './RenderField';
 
-import './styles.css';
 let counter = 0;
 
 const Field = ({ children, type, id, label, ...props }) => {

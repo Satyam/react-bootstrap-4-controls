@@ -5,6 +5,8 @@ import classNames from 'classnames';
 import WarningIcon from 'react-icons/lib/go/alert';
 import StopIcon from 'react-icons/lib/go/stop';
 
+import './styles.css';
+
 const RenderField = ({
   Contents,
   label,
@@ -18,7 +20,7 @@ const RenderField = ({
   const { touched, error, warning } = meta;
   return (
     <div className={classNames('form-group row', className)}>
-      <div className="col-sm-12 col-md-4 left-label">
+      <div className="col-sm-12 col-md-4 rb4c-left-label">
         <label htmlFor={id}>{label}</label>
       </div>
 
@@ -29,13 +31,13 @@ const RenderField = ({
         <small className="form-text text-muted">{help}</small>
         {touched &&
           ((error && (
-            <div className="form-status form-error text-danger">
+            <div className="rb4c-form-status text-danger">
               <StopIcon />
               {error}
             </div>
           )) ||
             (warning && (
-              <div className="form-status form-error text-warning">
+              <div className="rb4c-form-status  text-warning">
                 <WarningIcon />
                 {warning}
               </div>

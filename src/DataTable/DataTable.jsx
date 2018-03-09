@@ -75,7 +75,10 @@ class DataTable extends Component {
         <th
           onClick={sortable ? this.changeSort : void 0}
           className={classNames(
-            { sortable, sorted: sortCol === name },
+            {
+              'rb4c-datatable-sortable': sortable,
+              'rb4c-datatable-sorted': sortCol === name,
+            },
             headClassName,
           )}
           name={name}

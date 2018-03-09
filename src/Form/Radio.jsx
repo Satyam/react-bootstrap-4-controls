@@ -19,7 +19,7 @@ const Radio = ({ options, name, meta, input, ...props }) => {
     input.onChange(ev);
   };
   return (
-    <ul className="form-radios" {...input}>
+    <ul className="rb4c-form-radios" {...input}>
       {options.map(({ props: { value, ...optionProps } }) => (
         <RadioItem
           name={input.name}
