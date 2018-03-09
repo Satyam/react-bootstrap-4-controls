@@ -19,16 +19,12 @@ export default {
     {
       file: 'lib/index.umd.js',
       format: 'umd',
-      name: 'react-bootstrap-4-controls',
+      name: 'reactBootstrap4Controls',
     },
   ],
-  external: [
-    ...Object.keys(pkg.dependencies || {}),
-    ...Object.keys(pkg.peerDependencies || {}),
-  ],
+  external: [...Object.keys(pkg.peerDependencies || {})],
   plugins: [
     postcss({
-      extract: true,
       modules: true,
       extensions: ['.css'],
       minimize: true,

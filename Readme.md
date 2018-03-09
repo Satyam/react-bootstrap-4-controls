@@ -8,6 +8,14 @@ These components are a minimal implementation, as required by my own needs for a
 npm i @devasatyam/react-bootstrap-4-controls
 ```
 
+The components can then be imported as shown in each individual section. The file at `lib/index.umd.js` can also be imported via HTML `<script>` tag which will create a global `reactBootstrap4Controls` variable containing all the controls as properties, ie: `reactBootstrap4Controls.Button`, `reactBootstrap4Controls.NavBar` and so on.
+
+### External dependencies
+
+The controls have React as a peer dependency, that is, they expect it to be installed into `node_modules`, but does not include it. `react-router-dom` should also be available. The `Form` and `Field` components expect `react-final-form` to be installed likewise.
+
+This package also expect Bootstrap 4 CSS files to be available. As an alternative [Bootswatch](https://bootswatch.com/) offer various styles that can be used. There is no need to include JQuery or Popper.
+
 ## Usage
 
 See the corresponding section:
