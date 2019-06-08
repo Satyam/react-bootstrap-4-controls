@@ -1,3 +1,7 @@
+# Obsolete
+
+These controls are way obsolete as there are now true Bootstrap v4 controls available
+
 # Bootstrap v4 components
 
 These components are a minimal implementation, as required by my own needs for an application of mine, of the Bootstrap v4 components and layouts to React. They are not meant to be a complete solution or replacement for [react-bootstrap](https://react-bootstrap.github.io/) which uses Bootstrap v3.
